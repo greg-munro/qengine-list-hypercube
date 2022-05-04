@@ -56,7 +56,7 @@ module.exports = function (grunt) {
     watch: {
       clientscript: {
         files: ["src/less/**/*.less", "src/js/**/*.js", "public/app.js"], // which files to watch
-        tasks: ["includes", "babel", "less", "uglify", "copy:main"],
+        tasks: ["includes", "babel", "less", "uglify", "copy:main", 'eslint', 'stylelint'],
       },
       views: {
         files: ["src/html/**/*.html"],
@@ -136,6 +136,8 @@ module.exports = function (grunt) {
     "minifyHtml",
     "copy:main",
     "watch",
+    'eslint', 
+    'stylelint'
   ]);
   grunt.registerTask("build", [
     "stylelint",
