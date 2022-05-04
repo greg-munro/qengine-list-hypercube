@@ -1,1 +1,1 @@
-generating qlistdefobject & hypercube with qlik engine
+generating qlistdefobject & hypercube with qlik engine - adding selectors, listeners & basic style
